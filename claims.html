@@ -246,6 +246,7 @@ setTimeout(function () {
         imichatwidget.on("imichat-widget:ready", function (appId) {
           var loadedAppId = appId;
           console.log("ready");
+          console.log("Widget ready. App ID:", appId);
           var data =
             '{"custom_chat_fields": {"PageName": "ClaimsPage", "EmailID":"tester22@gmail.com"}}';
           imichatwidget.init(data, function (response) {
